@@ -1,0 +1,124 @@
+/* Test task 1 */
+.a-close{
+    background: #f2a64e;
+    border: 2px solid #777;
+    padding: 30px 80px 30px 20px;
+    position: relative;
+    font: bold 20px/20px Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.a-close::before,
+.a-close::after{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 5px;
+    top: 10px;
+}
+
+.a-close::before{
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.a-close::after{
+    content: "\00d7";
+    font-size: 40px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+
+/* Test task 3 */
+fieldset{
+    max-width: 300px;
+    width: 100%;
+    min-height: 200px;
+    font: normal 16px/20px Arial, sans-serif;
+    background: #efefef
+}
+
+button{
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.a-input{
+    border: 2px solid #777;
+    width: calc(100% - 24px);
+    padding: 5px 10px;
+}
+
+[class^="m-list"]{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+
+}
+
+[class^="m-list"] .a-list-item{
+    width: 100%;
+    display: inline-block;
+    clear: both;
+    white-space: nowrap;
+}
+
+
+[class^="m-list"] .a-button{
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    background: inherit;
+}
+
+[class^="m-list"].is-open{
+    display: block;
+}
+
+.m-list-results{
+    border: 1px solid #aaa;
+    display: none;
+    background: #fff;
+}
+
+[class^="m-list"] .a-item{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    float: left;
+}
+
+.date{
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    padding-left: 10px;
+}
+
+.m-list-saved .a-delete{
+    float: right;
+    line-height: 20px;
+    background: transparent;
+}
+
+.m-list-saved .a-delete::after{
+    content: "\00d7";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 16px;
+}
+

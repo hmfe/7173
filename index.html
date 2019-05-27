@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Test Andreas Lundeg&aring;rd</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.ajax.min.js"></script>
+    <script src="index.js"></script>
+</head>
+    <body>
+    <fieldset>
+        <legend>Wikipedia search</legend>
+        <input type="text" name="search-field" class="a-input" id="searchInput"/>
+        <ul class="m-list-results" id="results"></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Search history</legend>
+        <ul class="m-list-saved" id="saved"></ul>
+        <button class="a-close" id="clearButton">Delete</button>
+    </fieldset>
+
+    <template id="result-item">
+        <li class="a-list-item"><button class="a-button"></button></li>
+    </template>
+    <template id="saved-item">
+        <li class="a-list-item"><span class="a-item"></span><span class="date"></span><button class="a-delete"></button></li>
+    </template>
+    </body>
+</html>
