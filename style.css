@@ -39,11 +39,19 @@
 
 /* Test task 3 */
 fieldset{
-    max-width: 300px;
-    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 40px);
     min-height: 200px;
-    font: normal 16px/20px Arial, sans-serif;
+    font: normal 20px/20px Arial, sans-serif;
     background: #efefef
+}
+
+@media ( max-width: 500px ) {
+    fieldset, .a-input{
+        max-width: 500px;
+        font: normal 16px/20px Arial, sans-serif;
+    }
 }
 
 button{
@@ -55,9 +63,11 @@ button{
 
 .a-input{
     border: 2px solid #777;
-    width: calc(100% - 24px);
-    padding: 5px 10px;
+    width: calc(100% - 14px);
+    padding: 10px 5px;
+    font: normal 20px/20px Arial, sans-serif;
 }
+
 
 [class^="m-list"]{
     list-style-type: none;
